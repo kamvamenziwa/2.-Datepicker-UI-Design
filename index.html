@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<title>Datepicker UI</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#5b0e91,#c1126b);
+    font-family:"Lora", serif;
+}
+
+.datepicker{
+    width:360px;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+.top{
+    background:linear-gradient(135deg,#ff004c,#7b2cbf);
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.top h2{
+    font-style:italic;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.top p{
+    font-size:16px;
+    opacity:0.9;
+    font-style:italic;
+}
+
+.calendar{
+    padding:25px;
+}
+
+.month{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.month h3{
+    color:#7b2cbf;
+    font-style:italic;
+}
+
+.month button{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#ff0054;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.month button:hover{
+    transform:scale(1.1);
+    background:#7b2cbf;
+}
+
+.days,
+.dates{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    text-align:center;
+    gap:10px;
+}
+
+.days div{
+    font-weight:bold;
+    color:#7b2cbf;
+    font-style:italic;
+}
+
+.dates div{
+    padding:12px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    font-style:italic;
+}
+
+.dates div:hover{
+    background:#f3d1ff;
+}
+
+.active{
+    background:linear-gradient(135deg,#ff0054,#7b2cbf);
+    color:white;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="datepicker">
+
+    <div class="top">
+        <h2>Date Picker</h2>
+        <p>Select your beautiful date</p>
+    </div>
+
+    <div class="calendar">
+
+        <div class="month">
+            <button>&lt;</button>
+            <h3>May 2026</h3>
+            <button>&gt;</button>
+        </div>
+
+        <div class="days">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+
+        <br>
+
+        <div class="dates">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div class="active">8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div>31</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Lora", sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right, #0000FF, #1F1FFF);
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.datepicker{
+    width:370px;
+    background:pink;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+
+.datepicker h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2d2d2d;
+    font-size:32px;
+    font-weight:700;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    border-radius:15px;
+    overflow:hidden;
+    background:#f4f4f4;
+    border:1px solid #ddd;
+}
+
+.input-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    padding:15px;
+    font-size:16px;
+    color:#333;
+}
+
+.input-box input::placeholder{
+    color:#999;
+}
+
+.calendar-btn{
+    width:60px;
+    height:55px;
+    border:none;
+    background:#3f2b96;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.calendar-btn:hover{
+    background:#5f4bc7;
+}
+
+.calendar{
+    margin-top:30px;
+}
+
+.month{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.month h2{
+    color:#333;
+    font-size:24px;
+}
+
+.month span{
+    width:40px;
+    height:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ece8ff;
+    border-radius:50%;
+    color:#3f2b96;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.month span:hover{
+    background:#3f2b96;
+    color:white;
+}
+
+.days,
+.dates{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:12px;
+    text-align:center;
+}
+
+.days div{
+    font-weight:700;
+    color:#666;
+}
+
+.dates div{
+    padding:12px;
+    border-radius:14px;
+    cursor:pointer;
+    transition:0.3s;
+    color:#333;
+}
+
+.dates div:hover{
+    background:#d8d1ff;
+    transform:translateY(-3px);
+}
+
+.active{
+    background:#3f2b96;
+    color:white !important;
+    font-weight:bold;
+}
+
+.inactive{
+    color:#c2c2c2 !important;
+}
+
+.select-btn{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(135deg,#3f2b96,#a8c0ff);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.select-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(63,43,150,0.3);
+}
